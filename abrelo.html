@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Crawl</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: black;
+            overflow: hidden;
+        }
+
+        .star-wars {
+            position: relative;
+            height: 100vh;
+            perspective: 600px;
+            overflow: hidden;
+        }
+
+        .title-container {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 5%;
+        }
+
+        .title {
+            font-size: 40px;
+            color: transparent;
+            -webkit-text-stroke: 1px #FFD700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+
+        .crawl {
+            position: absolute;
+            top: 30%;
+            width: 100%;
+            animation: crawl 60s linear infinite;
+        }
+
+        .crawl p {
+            font-size: 24px;
+            font-weight: 900;
+            text-align: justify;
+            color: #FFD700;
+            line-height: 1.5;
+        }
+
+        @keyframes crawl {
+            0% {
+                top: 100vh;
+                transform: rotateX(25deg) translateZ(0);
+            }
+            100% {
+                top: -200vh;
+                transform: rotateX(25deg) translateZ(-1500px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="star-wars">
+        <div class="title-container">
+            <div class="title">Una Aventura Cósmica</div>
+        </div>
+        <div class="crawl">
+            <p>
+                En una galaxia muy, muy lejana...
+            </p>
+            <p>
+                Dos almas rebeldes, que ni el mismísimo Imperio podría detener, se encontraron en medio del caos diario, y desde entonces, su historia ha sido digna de una saga intergaláctica.
+            </p>
+            <p>
+                Como si fuéramos pilotos novatos en una nave loca, hemos sobrevivido a todo tipo de aventuras: desde lunes más temidos que Darth Vader, hasta noches de películas que duran más que la batalla de Endor.
+            </p>
+            <p>
+                Ileana, tú eres mi compañera de travesuras cósmicas, siempre dispuesta a unirte a cualquier misión, por más ridícula que parezca. Juntos, hemos burlado las fuerzas del aburrimiento y nos hemos reído hasta de lo imposible.
+            </p>
+            <p>
+                Prometo seguir siendo tu copiloto en esta nave llamada vida, incluso cuando mi sentido de la Fuerza no funcione como debería. Sigamos explorando galaxias de risas, pizza y aventuras que ningún Jedi se atrevería a enfrentar.
+            </p>
+            <p>
+                Que nuestra misión no termine nunca, porque en este universo, y en cualquier otro, siempre seremos el mejor equipo, listos para conquistar el cosmos.
+            </p>
+        </div>
+        // Puedes cambiar el texto por el que prefieras
+       
+</body>
+</html>
